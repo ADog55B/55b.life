@@ -50,7 +50,11 @@ export const SOCIALS: Socials = [
     HREF: "https://xhslink.com/m/52zmvxUd7Nw",
   },  
   { 
+    NAME: "播客 非必要不",
+    HREF: "",
+  },
+  { 
     NAME: "公众号 妙控猫咪",
-    HREF: " ",
+    HREF: "",
   }
 ];

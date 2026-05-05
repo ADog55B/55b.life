@@ -62,9 +62,16 @@ const nownownow = await Promise.all(
         <ul class="flex flex-wrap gap-2">
           {SOCIALS.map(SOCIAL => (
             <li class="flex gap-x-2 text-nowrap">
-              <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
-                {SOCIAL.NAME}
-              </Link>
+              {SOCIAL.HREF ? (
+                <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
+                  {SOCIAL.NAME}
+                </Link>
+              ) : (
+                /* 删掉多余的颜色类名，只保留文本本身 */
+                <span>
+                  {SOCIAL.NAME}
+                </span>
+              )}
               {"/"}
             </li>
           ))}
