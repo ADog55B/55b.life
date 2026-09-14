@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>55b.life</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --accent: #c8542a;
+    --rule: #d8d6d2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17171a;
+      --fg: #ededf0;
+      --muted: #a3a3aa;
+      --accent: #e08150;
+      --rule: #3a3a3f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17171a;
+    --fg: #ededf0;
+    --muted: #a3a3aa;
+    --accent: #e08150;
+    --rule: #3a3a3f;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .brand {
+    position: fixed;
+    top: 22px;
+    left: 24px;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+  }
+
+  main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 96px 24px 64px;
+  }
+
+  .content {
+    max-width: 480px;
+    width: 100%;
+    text-align: left;
+  }
+
+  h1, h2 {
+    text-wrap: balance;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.3;
+  }
+  h1 { font-size: 1.75rem; }
+  h2 {
+    font-size: 1.35rem;
+    margin-top: 52px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: var(--muted);
+    margin: 16px 0 0;
+  }
+
+  .social {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 2.1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0 10px;
+  }
+  .social a,
+  .mail a {
+    color: var(--fg);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .social a:hover,
+  .mail a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .sep {
+    color: var(--rule);
+  }
+
+  .misc {
+    margin-top: 28px;
+  }
+  .misc p { margin: 6px 0 0; }
+  .mail { margin-top: 8px; }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 480px) {
+    .brand { top: 16px; left: 16px; font-size: 0.95rem; }
+    main { padding: 76px 20px 48px; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; margin-top: 44px; padding-top: 24px; }
+  }
+</style>
+</head>
+<body>
+  <div class="brand">55b.life</div>
+  <main>
+    <div class="content">
+      <h1>About me</h1>
+      <p>19.9.12 - 26.10.6 湾区<br>26.10.7 - ? 多伦多</p>
+      <p>一些重要或不重要的标签：<br>Polyamory<br>Liberal<br>Feminist</p>
+      <p>两个最大的爱好是玩游戏和做爱（认真）。</p>
+      <p>我喜欢在网上观察人类，<br>或许你也是？</p>
+
+      <h2>关注我的社交媒体</h2>
+      <div class="social">
+        <a href="https://www.weibo.com/u/7754908874" target="_blank" rel="noopener">微博</a><span class="sep">/</span><a href="https://www.threads.com/@55bisacat" target="_blank" rel="noopener">Threads（同步微博）</a><span class="sep">/</span><a href="https://www.instagram.com/55bisacat/" target="_blank" rel="noopener">Instagram</a><span class="sep">/</span><a href="https://www.douban.com/people/128785937/" target="_blank" rel="noopener">豆瓣</a><span class="sep">/</span><a href="https://xhslink.com/m/52zmvxUd7Nw" target="_blank" rel="noopener">小红书</a>
+      </div>
+
+      <div class="misc">
+        <p>播客 - 非必要不</p>
+        <p>公众号 - 妙控猫咪</p>
+        <p class="mail">mail me: <a href="mailto:pipineko@outlook.com">pipineko@outlook.com</a></p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

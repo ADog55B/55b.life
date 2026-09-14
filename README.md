@@ -1,2 +1,3 @@
-# 个人主页
-Theme by [Astro Nano](https://github.com/markhorn-dev/astro-nano)
+# 55b.life
+
+个人主页，纯静态 HTML，无构建步骤。
